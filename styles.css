@@ -539,7 +539,7 @@ p, a, span:not(.collage-item-overlay),
     z-index: 3;
     display: flex;
     justify-content: center;
-    padding: 60px 0;
+    padding: 100px 0 60px;
 }
 
 .collage-wrapper {
@@ -606,7 +606,7 @@ p, a, span:not(.collage-item-overlay),
 
 .collage-label {
     position: absolute;
-    bottom: 40px;
+    top: 40px;
     left: 50%;
     transform: translateX(-50%);
     z-index: 4;
@@ -647,7 +647,7 @@ p, a, span:not(.collage-item-overlay),
     }
 
     .collage-label {
-        bottom: 20px;
+        top: 20px;
     }
 
     .collage-label span {
