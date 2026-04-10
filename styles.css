@@ -487,7 +487,7 @@ p, a, span:not(.collage-item-overlay),
 .bio-text {
     max-width: 100%;
     margin: 0 auto;
-    text-align: justify;
+    text-align: left;
 }
 
 .bio-text p {
