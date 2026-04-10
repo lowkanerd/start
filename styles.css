@@ -544,13 +544,13 @@ p, a, span:not(.collage-item-overlay),
 
 .collage-wrapper {
     width: 100%;
-    max-width: 800px;
+    max-width: 1400px;
 }
 
 .collage-grid {
     display: grid;
-    grid-template-columns: 1fr;
-    gap: 40px;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 16px;
     padding: 20px;
 }
 
