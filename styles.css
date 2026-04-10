@@ -543,21 +543,22 @@ p, a, span:not(.collage-item-overlay),
 }
 
 .collage-wrapper {
-    width: var(--collage-width);
-    max-width: 700px;
+    width: 100%;
+    max-width: 800px;
 }
 
 .collage-grid {
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
-    gap: 12px;
+    grid-template-columns: 1fr;
+    gap: 40px;
     padding: 20px;
 }
 
 .collage-item {
     position: relative;
     overflow: hidden;
-    aspect-ratio: 3/4;
+    width: 100%;
+    height: auto;
     cursor: pointer;
     transition: transform 0.4s var(--ease-out-back),
                 z-index 0s 0.4s;
