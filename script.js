@@ -563,6 +563,7 @@
             waitlistForm.addEventListener('submit', (e) => {
                 e.preventDefault();
                 
+                const nameInput = document.getElementById('waitlistName').value;
                 const emailInput = document.getElementById('waitlistEmail').value;
                 const termsChecked = document.getElementById('waitlistTerms').checked;
                 
@@ -595,7 +596,7 @@
                     mode: 'no-cors', // requires no-cors for native Google Apps Script execution
                     cache: 'no-cache',
                     headers: { 'Content-Type': 'application/json' },
-                    body: JSON.stringify({ email: emailInput })
+                    body: JSON.stringify({ name: nameInput, email: emailInput })
                 })
                 .then(() => {
                     waitlistSubmitBtn.innerText = originalBtnText;
